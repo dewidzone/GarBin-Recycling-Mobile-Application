@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/aladin</item>
+        <item>@font/alata</item>
+        <item>@font/amarante</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/chelsea_market</item>
+        <item>@font/lobster</item>
+        <item>@font/londrina_solid</item>
+        <item>@font/pacifico</item>
+    </array>
+</resources>

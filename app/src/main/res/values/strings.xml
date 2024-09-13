@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">GarBin</string>
+
+    <string-array name="random_texts">
+        <item>
+            Our Ultimate Goal Is To Get People To Prevent Waste In The First Place. </item>
+        <item>
+            Recycling Turns Things Into Other Things, Which Is Like MAGIC. </item>
+        <item>
+            Recycle Today For A Better Tomorrow. </item>
+        <item>
+            Recycle The Present, Save The Future. </item>
+        <item>
+            When You Refuse To Reuse It\'s Our Earth You Abuse. </item>
+        <item>
+            Recycle. The Possibilities Are Endless, So Start Today. </item>
+        <item>
+            A Smart City Cannot Be Imagined Without Proper Recycling.</item>
+        <item>
+            Thanks For Using GarBin, Let\'s Save Planet Earth Together!</item>
+    </string-array>
+
+    <string name="select_problem_prompt">Select your problem...</string>
+
+    <string-array name="problem_array">
+        <item>Bin Damaged</item>
+        <item>Overflowing Garbage Bin</item>
+        <item>Bin Lid Damaged</item>
+        <item>Driver Not Picking Bin</item>
+        <item>Bin Lid Damaged</item>
+        <item>Other</item>
+
+    </string-array>
+
+
+</resources>

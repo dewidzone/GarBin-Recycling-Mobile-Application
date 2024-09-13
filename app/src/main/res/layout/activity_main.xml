@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard"
+    android:onClick="hideKeyboard"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/faqbutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_button"
+        android:drawableLeft="@drawable/report"
+        android:drawableTint="#FF4147"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="350dp"
+        android:layout_height="51dp"
+        android:background="@drawable/input_bg"
+        android:fontFamily="@font/alata"
+        android:queryHint="What Goes Where? E.G : Batteries."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="362dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/lobster"
+        android:text="My Name"
+        android:textColor="@color/green"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/faqbutton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faqbutton" />
+
+    <TextView
+        android:id="@+id/mycity"
+        android:layout_width="362dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/lobster"
+        android:text="My City"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeMessage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/welcomeMessage"
+        app:layout_constraintTop_toTopOf="@+id/welcomeMessage" />
+
+    <TextView
+        android:id="@+id/garbage_collection_day"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/chelsea_market"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/search_bar"
+        app:layout_constraintEnd_toEndOf="@+id/search_bar"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="@+id/search_bar"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <ImageView
+        android:id="@+id/paper_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/search_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toEndOf="@+id/garbage_collection_day"
+        app:layout_constraintTop_toBottomOf="@+id/faqbutton"
+        app:layout_constraintVertical_bias="0.663"
+        app:srcCompat="@drawable/paper"
+        android:visibility="gone"/>/>
+
+    <ImageView
+        android:id="@+id/organic_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/search_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toEndOf="@+id/garbage_collection_day"
+        app:layout_constraintTop_toBottomOf="@+id/faqbutton"
+        app:layout_constraintVertical_bias="0.663"
+        app:srcCompat="@drawable/organic"
+        android:visibility="gone"/>/>
+
+    <ImageView
+        android:id="@+id/plastic_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/search_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toEndOf="@+id/garbage_collection_day"
+        app:layout_constraintTop_toBottomOf="@+id/faqbutton"
+        app:layout_constraintVertical_bias="0.663"
+        app:srcCompat="@drawable/plastic"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/sendpick_req"
+        android:layout_width="332dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/wbtn_bg"
+        android:drawableLeft="@drawable/request"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="20dp"
+        android:text="SEND PICKUP REQUEST NOW"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/search_bar"
+        app:layout_constraintStart_toStartOf="@+id/search_bar"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar" />
+
+    <Button
+        android:id="@+id/my_activity"
+        android:layout_width="332dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/wbtn_bg"
+        android:drawableLeft="@drawable/myactivity"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="20dp"
+        android:text="VIEW ALL MY ACTIVITIES"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/sendpick_req"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sendpick_req"
+        app:layout_constraintTop_toBottomOf="@+id/sendpick_req" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

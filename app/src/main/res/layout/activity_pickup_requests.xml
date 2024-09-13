@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pickupreq"
+    android:onClick="hideKeyboard"
+    tools:context=".PickupRequests">
+
+    <TextView
+        android:id="@+id/address_textview"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/collectiontype"
+        android:layout_alignStart="@+id/collectiontype"
+        android:layout_alignEnd="@+id/collectiontype"
+        android:gravity="center"
+        android:text="MY ADDRESS"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <LinearLayout
+        android:id="@+id/collectiontype"
+        android:layout_width="410dp"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnPlastic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:src="@drawable/pl" />
+
+        <ImageButton
+            android:id="@+id/btnPaper"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pa" />
+
+        <ImageButton
+            android:id="@+id/btnOrganic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/or" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSelectedOption"
+        android:layout_width="376dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/collectiontype"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/alata"
+        android:text="Selected Collection Type: "
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/collectiontype"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/collectiontype"
+        app:layout_constraintTop_toBottomOf="@+id/collectiontype" />
+
+
+    <Button
+        android:id="@+id/btnSendPickupRequest"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/address_textview"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:drawableLeft="@drawable/righttick"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/alata"
+        android:paddingLeft="20dp"
+        android:text="Send Pickup Request"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/address_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/address_textview"
+        app:layout_constraintTop_toBottomOf="@+id/address_textview" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/txtSelectedOption"
+        android:layout_alignStart="@+id/address_textview"
+        android:layout_alignEnd="@+id/address_textview"
+        android:layout_marginTop="224dp"
+        android:gravity="center"
+        android:text="The Truck Will Arrive Soon To the below location"
+        android:textColor="@color/green"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtSelectedOption"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtSelectedOption"
+        app:layout_constraintTop_toBottomOf="@+id/txtSelectedOption" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
